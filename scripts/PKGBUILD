@@ -1,0 +1,15 @@
+pkgname=scripts
+pkgver=0.4.6
+pkgrel=1
+pkgdesc="Bartek's very own collection of various scripts"
+arch=('any')
+url="https://github.com/bartekpacia/scripts/"
+license=('MIT')
+source=("https://github.com/bartekpacia/$pkgname/archive/refs/tags/v$pkgver.tar.gz")
+
+sha256sums=('5314846c30b46fcddaf0d7ff8dcb9448c2742bd935addd14fd6b81a3e5261606')
+
+package() {
+    echo "srcdit: $srcdir"
+    echo "pkgdir: $pkgdir"
+}
