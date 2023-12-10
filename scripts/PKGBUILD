@@ -1,7 +1,9 @@
+# Maintainer: Bartek Pacia <barpac02@gmail.com>
+
 pkgname=scripts
 pkgver=0.4.7
 pkgrel=1
-pkgdesc="Bartek's very own collection of various scripts"
+pkgdesc="Bartek's very own collection of various shell programs"
 arch=('any')
 url="https://github.com/bartekpacia/scripts/"
 license=('MIT')
