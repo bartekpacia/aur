@@ -1,5 +1,5 @@
 pkgname=scripts
-pkgver=0.4.6
+pkgver=0.4.7
 pkgrel=1
 pkgdesc="Bartek's very own collection of various scripts"
 arch=('any')
