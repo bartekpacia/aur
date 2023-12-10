@@ -12,6 +12,31 @@ source=("https://github.com/bartekpacia/$pkgname/archive/refs/tags/v$pkgver.tar.
 sha256sums=('5314846c30b46fcddaf0d7ff8dcb9448c2742bd935addd14fd6b81a3e5261606')
 
 package() {
-    echo "srcdit: $srcdir"
-    echo "pkgdir: $pkgdir"
+	# we are in srcdir!
+	cd "$pkgname-$pkgver"
+
+	#echo "srcdir: $srcdir"
+	#echo "pkgdir: $pkgdir"
+
+	binaries=(
+		changelog
+		clsipy
+		flutter_fastlane_bump
+		get_ssh_key
+		gh_release
+		lenny
+		rmtex
+		screenrecord
+		simu
+		srcenv
+	)
+
+	## Binaries
+	for binary in "${binaries[@]}"; do
+		echo "realpath for binary $binary: $(realpath $binary)" 
+		install -D -m 755 "bin/$binary" "${pkgdir}/usr/bin/$binary"
+	done
+
+	## License
+	install -D -m 644 LICENSE "${pkgdir}/usr/share/licenses/scripts/LICENSE"
 }
