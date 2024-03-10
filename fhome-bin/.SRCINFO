@@ -7,9 +7,9 @@ pkgbase = fhome-bin
 	provides = fhome
 	arch = aarch64
 	source_aarch64 = https://github.com/bartekpacia/fhome/releases/download/v0.1.18/fhome_0.1.18_linux_arm64.tar.gz
-	sha256sums_aarch64 = 6da0910df5f7180722cd567efbd615c079e7895a62334bda0e793473d67b17de
+	sha256sums_aarch64 = 5ff10a574f269318f5e2ed24f61e77cd062602b9bf0f5699f24ba3d0809c49d5
 	arch = x86_64
 	source_x86_64 = https://github.com/bartekpacia/fhome/releases/download/v0.1.18/fhome_0.1.18_linux_amd64.tar.gz
-	sha256sums_x86_64 = 08d1783efb1de176a8865e76fa2963f4673efc8f29eb3f61aadbf0951d2e278b
+	sha256sums_x86_64 = c1f524f3495a79c912e4e3414463cc260827cafa0e59dff9780f0df7d700d6e3
 	
 pkgname = fhome-bin
