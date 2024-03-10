@@ -12,10 +12,10 @@ provides=('fhome')
 conflicts=('fhome')
 
 source_aarch64=("${pkgname}_${pkgver}_aarch64.tar.gz::https://github.com/bartekpacia/fhome/releases/download/v0.1.18/fhome_0.1.18_linux_arm64.tar.gz")
-sha256sums_aarch64=('e1c24046a852becdad652f89af2c1a734c092100b876aaab49f09fbdf3cdb240')
+sha256sums_aarch64=('aae5175554b10f4104c58b972ba2dd65709aa3804347e903fb206ec4702fce6b')
 
 source_x86_64=("${pkgname}_${pkgver}_x86_64.tar.gz::https://github.com/bartekpacia/fhome/releases/download/v0.1.18/fhome_0.1.18_linux_amd64.tar.gz")
-sha256sums_x86_64=('b3c6e2c9eb4fa1c94e993d506d756091fc3398662a14e99b0f5837be3d142c2d')
+sha256sums_x86_64=('d8bdc3b78a207139de1b65f621979ac8ec14de3e970293b40aeb8138b98fe49c')
 
 package() {
   cd "$pkgname-$pkgver"
