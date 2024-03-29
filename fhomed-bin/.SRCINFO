@@ -7,9 +7,9 @@ pkgbase = fhomed-bin
 	provides = fhome
 	arch = aarch64
 	source_aarch64 = https://github.com/bartekpacia/fhome/releases/download/v0.1.22/fhomed_0.1.22_linux_arm64.tar.gz
-	sha256sums_aarch64 = e31e3d7fcc677ca0f5c33a91ac046c9d2af84da892851f1a19a4a07c55025a52
+	sha256sums_aarch64 = 464899eeac3030c04624b16d21ca98dc1b04bd894e57de534adc47ef171e4de2
 	arch = x86_64
 	source_x86_64 = https://github.com/bartekpacia/fhome/releases/download/v0.1.22/fhomed_0.1.22_linux_amd64.tar.gz
-	sha256sums_x86_64 = dc5eec272357ae813aa0b759e3d32e4892a04c2cc3ebe19723e076fa90320c2b
+	sha256sums_x86_64 = 418101a172fa520ef5222811de840f6a2823021e539b1dfcc8408a1110bc9b09
 	
 pkgname = fhomed-bin
