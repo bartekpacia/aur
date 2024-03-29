@@ -1,15 +1,15 @@
 pkgbase = emu-bin
 	pkgdesc = Handy mini-CLI for more pleasant work with Android Emulator
-	pkgver = 0.2.4
+	pkgver = 0.2.5
 	pkgrel = 1
 	url = https://github.com/bartekpacia/emu
 	conflicts = emu
 	provides = emu
 	arch = aarch64
-	source_aarch64 = https://github.com/bartekpacia/emu/releases/download/v0.2.4/emu_0.2.4_linux_arm64.tar.gz
-	sha256sums_aarch64 = 657a3691348da7bb2e83b3a24f6e9e917a0e1aaa382266fa6115f3f50c24d4b0
+	source_aarch64 = https://github.com/bartekpacia/emu/releases/download/v0.2.5/emu_0.2.5_linux_arm64.tar.gz
+	sha256sums_aarch64 = bcf394ab4f60cb94ffb0da36009258406d8740743d2cb4a119482454c4a21550
 	arch = x86_64
-	source_x86_64 = https://github.com/bartekpacia/emu/releases/download/v0.2.4/emu_0.2.4_linux_amd64.tar.gz
-	sha256sums_x86_64 = 9672f0afed1209b612dc6462678b0374264037712fbc71cd7bb20baba7770ffb
+	source_x86_64 = https://github.com/bartekpacia/emu/releases/download/v0.2.5/emu_0.2.5_linux_amd64.tar.gz
+	sha256sums_x86_64 = c05802eccf6c9425cf362a866db56e89e7a47982b6d62b2cf4c82a3f0b290a70
 	
 pkgname = emu-bin
