@@ -2,7 +2,7 @@
 # Maintainer: Bartek Pacia <barpac02@gmail.com>
 
 pkgname='emu-bin'
-pkgver=0.2.11
+pkgver=0.2.12
 pkgrel=1
 pkgdesc='Handy mini-CLI for more pleasant work with Android Emulator'
 url='https://github.com/bartekpacia/emu'
@@ -11,11 +11,11 @@ license=('')
 provides=('emu')
 conflicts=('emu')
 
-source_aarch64=("${pkgname}_${pkgver}_aarch64.tar.gz::https://github.com/bartekpacia/emu/releases/download/v0.2.11/emu_0.2.11_linux_arm64.tar.gz")
-sha256sums_aarch64=('a627152e6a064b10ee272ea1f5e34eb2d9b84437e2ab31e1e35e39632d2040ca')
+source_aarch64=("${pkgname}_${pkgver}_aarch64.tar.gz::https://github.com/bartekpacia/emu/releases/download/v0.2.12/emu_0.2.12_linux_arm64.tar.gz")
+sha256sums_aarch64=('0ff4f1c103f590efe065648552717da7cd4998fc9eb006cbc72482d9a399afc2')
 
-source_x86_64=("${pkgname}_${pkgver}_x86_64.tar.gz::https://github.com/bartekpacia/emu/releases/download/v0.2.11/emu_0.2.11_linux_amd64.tar.gz")
-sha256sums_x86_64=('1effa352238d0f4df23ea087bcccc65c4815c20e421f1486b1fc0c867a202b56')
+source_x86_64=("${pkgname}_${pkgver}_x86_64.tar.gz::https://github.com/bartekpacia/emu/releases/download/v0.2.12/emu_0.2.12_linux_amd64.tar.gz")
+sha256sums_x86_64=('eebeff85ae5c4c386c3ecc3a42e32ae8820bea31320283a80e74c8b3913fd632')
 
 package() {
   cd "$pkgname-$pkgver"
