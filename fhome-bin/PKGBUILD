@@ -2,7 +2,7 @@
 # Maintainer: Bartek Pacia <barpac02@gmail.com>
 
 pkgname='fhome-bin'
-pkgver=0.2.4
+pkgver=0.2.5
 pkgrel=1
 pkgdesc='Interact with smart home devices connected to F&Home'
 url='https://github.com/bartekpacia/fhome'
@@ -11,11 +11,11 @@ license=('')
 provides=('fhome')
 conflicts=('fhome')
 
-source_aarch64=("${pkgname}_${pkgver}_aarch64.tar.gz::https://github.com/bartekpacia/fhome/releases/download/v0.2.4/fhome_0.2.4_linux_arm64.tar.gz")
-sha256sums_aarch64=('3e5fa6e145a320b88892b44db3e9470b3f7a8cc48214147461bbba7db84eb727')
+source_aarch64=("${pkgname}_${pkgver}_aarch64.tar.gz::https://github.com/bartekpacia/fhome/releases/download/v0.2.5/fhome_0.2.5_linux_arm64.tar.gz")
+sha256sums_aarch64=('da43e88fb135991a9a06aba6ac0c3313c8f94ed2e52563c226d140c2946d96a8')
 
-source_x86_64=("${pkgname}_${pkgver}_x86_64.tar.gz::https://github.com/bartekpacia/fhome/releases/download/v0.2.4/fhome_0.2.4_linux_amd64.tar.gz")
-sha256sums_x86_64=('a54bb194728847184f15d73b797e97aa3fd9e293328709d2a7fbcce6363f5976')
+source_x86_64=("${pkgname}_${pkgver}_x86_64.tar.gz::https://github.com/bartekpacia/fhome/releases/download/v0.2.5/fhome_0.2.5_linux_amd64.tar.gz")
+sha256sums_x86_64=('21053978192a77dbefc8915544d6be3032b07667c6fc3356c4da58ebdf6899eb')
 
 package() {
   cd "$pkgname-$pkgver"
@@ -28,6 +28,7 @@ package() {
   # completions
   mkdir -p "${pkgdir}/usr/share/bash-completion/completions/"
   mkdir -p "${pkgdir}/usr/share/zsh/site-functions/"
+  # TODO: use completion scripts from executable
   install -Dm755 autocomplete/bash_autocomplete_fhome "${pkgdir}/usr/share/bash-completion/completions/fhome"
   install -Dm755 autocomplete/zsh_autocomplete_fhome "${pkgdir}/usr/share/zsh/site-functions/_fhome"
 
