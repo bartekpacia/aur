@@ -1,15 +1,15 @@
 pkgbase = fhomed-bin
 	pkgdesc = Background daemon for F&Home
-	pkgver = 0.2.4
+	pkgver = 0.2.5
 	pkgrel = 1
 	url = https://github.com/bartekpacia/fhome
 	conflicts = fhome
 	provides = fhome
 	arch = aarch64
-	source_aarch64 = https://github.com/bartekpacia/fhome/releases/download/v0.2.4/fhomed_0.2.4_linux_arm64.tar.gz
-	sha256sums_aarch64 = f3a7d10fbf52e202c3f7aed33540e9da25214123599c6c20f884bf3761a0e927
+	source_aarch64 = https://github.com/bartekpacia/fhome/releases/download/v0.2.5/fhomed_0.2.5_linux_arm64.tar.gz
+	sha256sums_aarch64 = 1de0d2a055466ad5f13dcedac1a4513f79a4e002182ca7c5a3e070750b7bd150
 	arch = x86_64
-	source_x86_64 = https://github.com/bartekpacia/fhome/releases/download/v0.2.4/fhomed_0.2.4_linux_amd64.tar.gz
-	sha256sums_x86_64 = a7177be0e6444eea6f266dc3cf81b371d2837ae5d86ce68c1e7ea9cc33c2b9f2
+	source_x86_64 = https://github.com/bartekpacia/fhome/releases/download/v0.2.5/fhomed_0.2.5_linux_amd64.tar.gz
+	sha256sums_x86_64 = 678432c9e68371865eb129786e73207ede0efc7459fc0626f94fa2f7f7731988
 	
 pkgname = fhomed-bin
