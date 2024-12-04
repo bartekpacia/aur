@@ -2,7 +2,7 @@
 # Maintainer: Bartek Pacia <barpac02@gmail.com>
 
 pkgname='fhomed-bin'
-pkgver=0.2.6
+pkgver=0.2.7
 pkgrel=1
 pkgdesc='Background daemon for F&Home'
 url='https://github.com/bartekpacia/fhome'
@@ -11,11 +11,11 @@ license=('')
 provides=('fhome')
 conflicts=('fhome')
 
-source_aarch64=("${pkgname}_${pkgver}_aarch64.tar.gz::https://github.com/bartekpacia/fhome/releases/download/v0.2.6/fhomed_0.2.6_linux_arm64.tar.gz")
-sha256sums_aarch64=('a11fe6ab8cf0d677dbf40d4aee887ceb0b375182c1a23ac8bb7be8f8a5d5eed3')
+source_aarch64=("${pkgname}_${pkgver}_aarch64.tar.gz::https://github.com/bartekpacia/fhome/releases/download/v0.2.7/fhomed_0.2.7_linux_arm64.tar.gz")
+sha256sums_aarch64=('aa7ecab6a228ce7fb6f3b02ca1f209c361bbe396ff85c69bbb5560f0a9316a57')
 
-source_x86_64=("${pkgname}_${pkgver}_x86_64.tar.gz::https://github.com/bartekpacia/fhome/releases/download/v0.2.6/fhomed_0.2.6_linux_amd64.tar.gz")
-sha256sums_x86_64=('49b55dcdbdd6f9d1fc380ce40dc42ec5f9a35010a3c8aaf14dc8a5514824ea4e')
+source_x86_64=("${pkgname}_${pkgver}_x86_64.tar.gz::https://github.com/bartekpacia/fhome/releases/download/v0.2.7/fhomed_0.2.7_linux_amd64.tar.gz")
+sha256sums_x86_64=('9784e776274c24531f73909d64b1edf60456daccf7f86f0eb87a83bfb9c5488e')
 
 package() {
   cd "$pkgname-$pkgver"
