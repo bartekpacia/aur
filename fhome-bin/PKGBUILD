@@ -2,7 +2,7 @@
 # Maintainer: Bartek Pacia <barpac02@gmail.com>
 
 pkgname='fhome-bin'
-pkgver=0.2.6
+pkgver=0.2.7
 pkgrel=1
 pkgdesc='Interact with smart home devices connected to F&Home'
 url='https://github.com/bartekpacia/fhome'
@@ -11,11 +11,11 @@ license=('')
 provides=('fhome')
 conflicts=('fhome')
 
-source_aarch64=("${pkgname}_${pkgver}_aarch64.tar.gz::https://github.com/bartekpacia/fhome/releases/download/v0.2.6/fhome_0.2.6_linux_arm64.tar.gz")
-sha256sums_aarch64=('fed495a2dddcd55d88b84c0bd122b4a630671d2bc1979c2e8e2d18e410bbfdac')
+source_aarch64=("${pkgname}_${pkgver}_aarch64.tar.gz::https://github.com/bartekpacia/fhome/releases/download/v0.2.7/fhome_0.2.7_linux_arm64.tar.gz")
+sha256sums_aarch64=('556c4f3fb9d795be3a50a20f72562eb3ed20ad08225d7120450e2c84b55def05')
 
-source_x86_64=("${pkgname}_${pkgver}_x86_64.tar.gz::https://github.com/bartekpacia/fhome/releases/download/v0.2.6/fhome_0.2.6_linux_amd64.tar.gz")
-sha256sums_x86_64=('9dbc58d652c6e6587078b12511a54b978a20f96ac99303c506c0de6dadd8f441')
+source_x86_64=("${pkgname}_${pkgver}_x86_64.tar.gz::https://github.com/bartekpacia/fhome/releases/download/v0.2.7/fhome_0.2.7_linux_amd64.tar.gz")
+sha256sums_x86_64=('413063217f33b91e84fcd5e185ab6098bbfa8a1991c55ab539111a84734c1696')
 
 package() {
   cd "$pkgname-$pkgver"
