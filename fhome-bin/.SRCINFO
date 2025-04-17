@@ -1,15 +1,15 @@
 pkgbase = fhome-bin
 	pkgdesc = Interact with smart home devices connected to F&Home
-	pkgver = 0.3.1
+	pkgver = 0.3.2
 	pkgrel = 1
 	url = https://github.com/bartekpacia/fhome
 	conflicts = fhome
 	provides = fhome
 	arch = aarch64
-	source_aarch64 = https://github.com/bartekpacia/fhome/releases/download/v0.3.1/fhome_0.3.1_linux_arm64.tar.gz
-	sha256sums_aarch64 = d5e77754bc1393e4d476c460bb440f4fa956a2837e66c59000c7d5ec86b86fb7
+	source_aarch64 = https://github.com/bartekpacia/fhome/releases/download/v0.3.2/fhome_0.3.2_linux_arm64.tar.gz
+	sha256sums_aarch64 = e182dcd9be9a78600dfcfd240b81a7c66b2096c8f4d3dfc7a28d23b94859afa7
 	arch = x86_64
-	source_x86_64 = https://github.com/bartekpacia/fhome/releases/download/v0.3.1/fhome_0.3.1_linux_amd64.tar.gz
-	sha256sums_x86_64 = 1255cfd176efb0c3bedc76c1e60be13c9b860921c0ecc92919245474f7565ce6
+	source_x86_64 = https://github.com/bartekpacia/fhome/releases/download/v0.3.2/fhome_0.3.2_linux_amd64.tar.gz
+	sha256sums_x86_64 = 23daf90cfe3e05861017dfccfba7f2fd850232a0fb89df1395655d2c45af3a77
 	
 pkgname = fhome-bin
