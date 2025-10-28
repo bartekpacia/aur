@@ -7,9 +7,9 @@ pkgbase = emu-bin
 	provides = emu
 	arch = aarch64
 	source_aarch64 = https://github.com/bartekpacia/emu/releases/download/v0.3.3/emu_0.3.3_linux_arm64.tar.gz
-	sha256sums_aarch64 = 9362ac1b5f10bc602057bce6bd0f3d5f5f0011803b66ba06aa7d9aca414cf9e9
+	sha256sums_aarch64 = 6a7d6165c0abed46627390bb94f6f3451bd0f433cd21c9c7f059c1b4aba8391f
 	arch = x86_64
 	source_x86_64 = https://github.com/bartekpacia/emu/releases/download/v0.3.3/emu_0.3.3_linux_amd64.tar.gz
-	sha256sums_x86_64 = 67a89a1fafae992d0656295805a12e440255f0f1910cab22f8805a34e12f4825
+	sha256sums_x86_64 = a579ad1313061106704e38ac8988e909c7f33b097b51a10e32a1bab35dd05804
 	
 pkgname = emu-bin
