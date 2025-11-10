@@ -7,11 +7,10 @@ pkgbase = fhome
 	arch = x86_64
 	license = MIT
 	makedepends = go
-	makedepends = git
 	conflicts = fhome
 	provides = fhome
 	
 	source = https://github.com/bartekpacia/fhome/releases/download/v0.3.4/fhome-0.3.4.tar.gz
-	sha256sums = 05bdb2bfc1b65863f86932ac83fa74fc10fe2bb8ea7d00f0dc4108558e9a032f
+	sha256sums = 87d0bf03f717e3207a03563242cbf1dc8d3649ae4fea5d764962a09637ab9ff3
 	
 pkgname = fhome

@@ -10,28 +10,23 @@ arch=('aarch64' 'x86_64')
 license=('MIT')
 provides=('fhome')
 conflicts=('fhome')
-makedepends=('go' 'git')
+makedepends=('go')
 source=("${pkgname}_${pkgver}.tar.gz::https://github.com/bartekpacia/fhome/releases/download/v0.3.4/fhome-0.3.4.tar.gz")
-sha256sums=('05bdb2bfc1b65863f86932ac83fa74fc10fe2bb8ea7d00f0dc4108558e9a032f')
+sha256sums=('87d0bf03f717e3207a03563242cbf1dc8d3649ae4fea5d764962a09637ab9ff3')
 prepare() {
-  cd "${pkgname}-${pkgver}"
-  export GOPATH="${srcdir}"
   go mod download -modcacherw
 
 }
 build() {
-  cd "${pkgname}-${pkgver}"
-  export CGO_CPPFLAGS="${CPPFLAGS}"
-  export CGO_CFLAGS="${CFLAGS}"
-  export CGO_CXXFLAGS="${CXXFLAGS}"
-  export CGO_LDFLAGS="${LDFLAGS}"
-  export GOFLAGS="-buildmode=pie -trimpath -mod=readonly -modcacherw"
-  go build -ldflags="-w -s -buildid='' -linkmode=external -X main.version=${pkgver}" .
-  chmod +x ./fhome
+  CGO_ENABLED=0 go build \
+  -trimpath \
+  -mod=readonly \
+  -modcacherw \
+  -ldflags "-X main.version=$pkgver" \
+  ./cmd/fhome
 
 }
 package() {
-  cd "$pkgname-$pkgver"
   # bin
   install -Dm755 fhome "${pkgdir}/usr/bin/fhome"
 
