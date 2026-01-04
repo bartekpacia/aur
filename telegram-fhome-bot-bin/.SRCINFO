@@ -1,0 +1,16 @@
+pkgbase = telegram-fhome-bot-bin
+	pkgdesc = Telegram bot for interacting with F&Home smart home devices
+	pkgver = 0.1.0
+	pkgrel = 1
+	url = https://github.com/bartekpacia/telegram-fhome-bot
+	license = MIT
+	conflicts = telegram-fhome-bot
+	provides = telegram-fhome-bot
+	arch = aarch64
+	source_aarch64 = https://github.com/bartekpacia/telegram-fhome-bot/releases/download/v${pkgver}/telegram-fhome-bot_${pkgver}_linux_arm64.tar.gz
+	sha256sums_aarch64 = cc672c6c8895673b6283e0487648279d5cac1626c11347dd5d4a93964921d29c
+	arch = x86_64
+	source_x86_64 = https://github.com/bartekpacia/telegram-fhome-bot/releases/download/v${pkgver}/telegram-fhome-bot_${pkgver}_linux_amd64.tar.gz
+	sha256sums_x86_64 = bc08d9ba01a26afd0870b012c0f2d8c4b616d222ee3c444b5d19c67ec901de77
+	
+pkgname = telegram-fhome-bot-bin
