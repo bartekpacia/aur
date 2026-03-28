@@ -2,7 +2,7 @@
 # Maintainer: Bartek Pacia <barpac02@gmail.com>
 
 pkgname='fhome'
-pkgver=0.3.4
+pkgver=0.3.5
 pkgrel=1
 pkgdesc='Interact with smart home devices connected to F&Home'
 url='https://github.com/bartekpacia/fhome'
@@ -11,8 +11,8 @@ license=('MIT')
 provides=('fhome')
 conflicts=('fhome')
 makedepends=('go')
-source=("${pkgname}_${pkgver}.tar.gz::https://github.com/bartekpacia/fhome/releases/download/v0.3.4/fhome-0.3.4.tar.gz")
-sha256sums=('87d0bf03f717e3207a03563242cbf1dc8d3649ae4fea5d764962a09637ab9ff3')
+source=("${pkgname}_${pkgver}.tar.gz::https://github.com/bartekpacia/fhome/releases/download/v${pkgver}/fhome-${pkgver}.tar.gz")
+sha256sums=('55897193ae09ffbdd9b4e2c7bd21bb4a685f4c03876e1758f89dbadf3f104c3b')
 prepare() {
   go mod download -modcacherw
 
