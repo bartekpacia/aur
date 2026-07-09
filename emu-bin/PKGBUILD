@@ -2,7 +2,7 @@
 # Maintainer: Bartek Pacia <barpac02@gmail.com>
 
 pkgname='emu-bin'
-pkgver=0.3.4
+pkgver=0.3.5
 pkgrel=1
 pkgdesc='Handy mini-CLI for more pleasant work with Android Emulator'
 url='https://github.com/bartekpacia/emu'
@@ -12,27 +12,19 @@ provides=('emu')
 conflicts=('emu')
 
 source_aarch64=("${pkgname}_${pkgver}_aarch64.tar.gz::https://github.com/bartekpacia/emu/releases/download/v${pkgver}/emu_${pkgver}_linux_arm64.tar.gz")
-sha256sums_aarch64=('87023a6c1b15ec170ca8c3f4a546732a150c75dad765882d50872853d139dbff')
+sha256sums_aarch64=('29a63cc27afc566082047cc2f6cccd77921a07d37d6d5ca12534d9e2d0e3c0b7')
 
 source_x86_64=("${pkgname}_${pkgver}_x86_64.tar.gz::https://github.com/bartekpacia/emu/releases/download/v${pkgver}/emu_${pkgver}_linux_amd64.tar.gz")
-sha256sums_x86_64=('e479dc5bc2912f48d7aaa29805f6c70784c7b18a6df456d6f01e78ea1ef43997')
+sha256sums_x86_64=('e1d84085c6886fc2d33496e3b0382dd09f1fd79e413a30a9bcce1ba20b7cd8b9')
 
 package() {
-  cd "$pkgname-$pkgver"
   # bin
   install -Dm755 emu "${pkgdir}/usr/bin/emu"
 
   # license
   install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/emu/LICENSE"
 
-  # completions
-  mkdir -p "${pkgdir}/usr/share/bash-completion/completions/"
-  mkdir -p "${pkgdir}/usr/share/zsh/site-functions/"
-  # TODO: use completion scripts from executable
-  install -Dm755 autocomplete/bash_autocomplete "${pkgdir}/usr/share/bash-completion/completions/emu"
-  install -Dm755 autocomplete/zsh_autocomplete "${pkgdir}/usr/share/zsh/site-functions/_emu"
-
   # man pages
-  # install -Dm644 "./manpages/mybin.1.gz" "${pkgdir}/usr/share/man/man1/mybin.1.gz"
+  install -Dm644 manpages/emu.1.gz "${pkgdir}/usr/share/man/man1/emu.1.gz"
 
 }
